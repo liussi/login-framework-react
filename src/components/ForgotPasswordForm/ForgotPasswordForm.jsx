@@ -2,6 +2,9 @@ import Button from 'components/Button/Button';
 import EmailInput from 'components/InputEmail/InputEmail';
 import { useState } from 'react';
 import { resetPassword } from '../../api/authApi';
+import Icons from '../../img/sprite.svg';
+import Icon from 'components/Icon/Icon';
+import Header from 'components/Title/Title';
 
 function ForgotPasswordForm() {
   const [email, setEmail] = useState('');
@@ -19,7 +22,8 @@ function ForgotPasswordForm() {
 
   return (
     <>
-      <h2>Forgot Password?</h2>
+      <Icon iconPath={Icons + '#icon-qencode'} width={178} height={32} />
+      <Header title={'Forgot Password?'} />
       <form onSubmit={handleSubmit}>
         <EmailInput
           value={email}

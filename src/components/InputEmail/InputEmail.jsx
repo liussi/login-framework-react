@@ -1,10 +1,11 @@
 import React from 'react';
+import { Input } from './InputEmail.styled';
 
 function EmailInput({ value, onChange, placeholder, name }) {
   return (
     <div>
-      <label htmlFor={name}>Електронна пошта:</label>
-      <input
+      <label htmlFor={name}></label>
+      <Input
         type="email"
         id={name}
         value={value}

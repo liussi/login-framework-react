@@ -1,13 +1,11 @@
 import ForgotPasswordForm from "components/ForgotPasswordForm/ForgotPasswordForm";
+import AppContainer from "styled/GlobalStyled";
 
 
 export default function ForgotPassword() {
   return (
-    <div>
-     
-        <title>Quncode svg</title>
-      
+    <AppContainer>
       <ForgotPasswordForm />
-    </div>
+    </AppContainer>
   );
 }

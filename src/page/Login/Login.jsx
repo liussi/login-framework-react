@@ -1,12 +1,10 @@
 import LoginForm from "components/LoginForm/LoginForm";
+import AppContainer from "styled/GlobalStyled";
 
 export default function Login() {
   return (
-    <div>
-     
-        <title>Quncode svg</title>
-      
+    <AppContainer>
       <LoginForm />
-    </div>
+    </AppContainer>
   );
 }

@@ -2,6 +2,9 @@ import Button from 'components/Button/Button';
 import { useState } from 'react';
 import { setNewPassword } from '../../api/authApi';
 import PasswordInput from 'components/InputPassword/InputPassword';
+import Icon from 'components/Icon/Icon';
+import Icons from '../../img/sprite.svg';
+import Header from 'components/Title/Title';
 
 function ResetPassword() {
   const [password, setPassword] = useState('');
@@ -24,7 +27,8 @@ function ResetPassword() {
 
   return (
     <>
-      <h2>Forgot Password?</h2>
+      <Icon iconPath={Icons + '#icon-qencode'} width={178} height={32} />
+      <Header title={'Create new Password?'} />
       <form onSubmit={handleSubmit}>
         <PasswordInput
           value={password}

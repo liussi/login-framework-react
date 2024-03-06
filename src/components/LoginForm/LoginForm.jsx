@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 import Button from 'components/Button/Button';
 import EmailInput from 'components/InputEmail/InputEmail';
 import PasswordInput from 'components/InputPassword/InputPassword';
+import Icons from '../../img/sprite.svg';
+import Icon from 'components/Icon/Icon';
+import Header from 'components/Title/Title';
+import { Networks, StyleForm, StyledGit, StyledGoodle, StyledIcon } from './LoginForm.styled';
+
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -22,7 +27,7 @@ function Login() {
     event.preventDefault();
     try {
       if (!showPasswordInput) {
-        await createAccessToken(email);
+        // await createAccessToken(email);
         setShowPasswordInput(true);
       } else {
         await login(email, password);
@@ -37,9 +42,18 @@ function Login() {
 
   return (
     <div>
-      <h2>Log in to your account</h2>
+      <Icon iconPath={Icons + '#icon-qencode'} width={178} height={32} />
+      <Header title={'Log in to your account'} />
+      <Networks>Google</Networks>
+      <StyledGoodle>
+        <Icon iconPath={Icons + '#icon-google'} width={18} height={18} />
+      </StyledGoodle>
 
-      <form onSubmit={handleSubmit}>
+      <Networks>Github</Networks>
+      <StyledGit>
+        <Icon iconPath={Icons + '#icon-git'} width={18} height={18} />
+      </StyledGit>
+      <StyleForm  onSubmit={handleSubmit}>
         <EmailInput
           value={email}
           onChange={handleEmailChange}
@@ -54,7 +68,9 @@ function Login() {
         )}
         <Link to="/forgot-password">Forgot your password?</Link>
         <Button type="submit" label="Log in to Qencode" />
-      </form>
+      </StyleForm>
+      <p>Is your company new to Qencode? </p>
+      <Link>Sign up</Link>
     </div>
   );
 }
