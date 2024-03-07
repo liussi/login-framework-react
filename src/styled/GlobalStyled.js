@@ -8,6 +8,11 @@ const AppContainer = styled.section`
     padding-top: 180px;
     text-align:center;
     background-color: var(--color-white);
+    
+    `;
+const AppContainerWrap = styled.div`
+    width: 400px;
+margin: 0 auto;
     `;
 
-export default AppContainer ;
+export {AppContainerWrap,AppContainer}  ;

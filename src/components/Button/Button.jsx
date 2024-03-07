@@ -1,7 +1,8 @@
 import React from 'react';
+import { StyleButton } from './Button.styled';
 
 function Button({ onClick, label }) {
-  return <button onClick={onClick}>{label}</button>;
+  return <StyleButton onClick={onClick}>{label}</StyleButton>;
 }
 
 export default Button;
