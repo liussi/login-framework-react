@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/login-framework-react/static/css/main.66b76b8f.css",
+    "main.js": "/login-framework-react/static/js/main.097c08d6.js",
+    "static/media/sprite.svg": "/login-framework-react/static/media/sprite.7f9271457c79899cf43e2583c9e20a17.svg",
+    "index.html": "/login-framework-react/index.html",
+    "main.66b76b8f.css.map": "/login-framework-react/static/css/main.66b76b8f.css.map",
+    "main.097c08d6.js.map": "/login-framework-react/static/js/main.097c08d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66b76b8f.css",
+    "static/js/main.097c08d6.js"
+  ]
+}
